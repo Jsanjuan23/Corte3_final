@@ -28,7 +28,7 @@ import { firebase } from '../firebase'
   
   return (
     <>
-      <div className='text animate__animated animate__fadeIn animate__delay-2s'>
+      <div class="animate__animated animate__bounce animate__slower">
 
         <h1>Proyecto React</h1>
         <p align ="center">Jesus Sanjuan</p>
@@ -37,12 +37,12 @@ import { firebase } from '../firebase'
       </div>
       { cargando && <div className='loading'></div> }
 
-      <div className='container animate__animated animate__fadeIn animate__delay-2s'>
+      <div class="animate__animated animate__bounce animate__slower">
 
         { data && <img className='mainImg' src={data[0].url} alt="cat pic" />}
         { data && <Form imageUrl={data[0].url} /> }
       </div>
-      <div className='animate__animated animate__fadeIn animate__delay-2s'>
+      <div class="animate__animated animate__bounce animate__slower">
         <h2 className='text'>Gatos agregados a la lista</h2>
         <Gatos lista={lista} />
       </div>
