@@ -12,7 +12,22 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#agregar{
+  
+  
+  color: #23B9B0;
+  font-weight: 500; 
+}
+#texto{
+  font-size: 15px;
+  color: black;
 
+}
+p{
+  font-size: 12px;
+  color: blue;
+  font-weight: 500; 
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

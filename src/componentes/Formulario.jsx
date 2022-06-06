@@ -1,10 +1,10 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import { firebase } from '..firebase'
+//import { useForm } from "react-hook-form";
+import { firebase } from '../firebase'
 
 export default function Formulario({imageUrl}) {
 
-  const { register, handleSubmit } = useForm()
+  //const { register, handleSubmit } = useForm()
   const db = firebase.firestore();  
   const onSubmit = async (data) => {
     console.log(data)
@@ -20,14 +20,14 @@ export default function Formulario({imageUrl}) {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form /*onSubmit={handleSubmit(onSubmit)}*/>
       <div className="form-row">
         <label>name</label>
         <input
           type="text"
           id="UserName"
           name="UserName"
-          {...register("name", { required: true })}
+          //{...register("name", { required: true })}
         />
 
       </div>
@@ -37,7 +37,7 @@ export default function Formulario({imageUrl}) {
           type="text"
           id="UserName"
           name="UserName"
-          {...register("age", { required: true })}
+          //{...register("age", { required: true })}
         />
    
       </div>
@@ -47,7 +47,7 @@ export default function Formulario({imageUrl}) {
           type="text"
           id="UserName"
           name="UserName"
-          {...register("color", { required: true })}
+          //{...register("color", { required: true })}
         />
  
       </div>

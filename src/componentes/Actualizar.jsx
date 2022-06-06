@@ -1,10 +1,10 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+//import { useForm } from "react-hook-form";
 import { firebase } from '../firebase'
 
 export default function Actualizar({item}) {
 
-  const { register, handleSubmit } = useForm()
+  //const { register, handleSubmit } = useForm()
   const db = firebase.firestore(); 
 
   const enviar = async (data) => {
@@ -19,14 +19,14 @@ export default function Actualizar({item}) {
   };
 
   return (
-    <form onSubmit={handleSubmit(enviar)}>
+    <form /*onSubmit={handleSubmit(enviar)}*/>
       <div className="form-row">
         <label>name</label>
         <input
           type="text"
           id="UserName"
           name="UserName"
-          {...register("name", { required: true })}
+          //{...register("name", { required: true })}
         />
 
       </div>
@@ -36,7 +36,7 @@ export default function Actualizar({item}) {
           type="text"
           id="UserName"
           name="UserName"
-          {...register("age", { required: true })}
+          //{...register("age", { required: true })}
         />
       
       </div>
@@ -46,7 +46,7 @@ export default function Actualizar({item}) {
           type="text"
           id="UserName"
           name="UserName"
-          {...register("color", { required: true })}
+         // {...register("color", { required: true })}
         />
 
       </div>
