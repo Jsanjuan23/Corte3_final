@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import {GetGato} from './hooks/GetGato'
-import Form from '../Form'
+import {GetGato} from './Hooks/GetGato'
+import Form from '../componentes/Formulario'
 import Gatos from './Gatos'
 import { firebase } from '../firebase'
 
